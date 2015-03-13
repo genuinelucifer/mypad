@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1102620554 source:d:\codeblocks projects\mypad1.0\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<commdlg.h>
+	"resource.h"
+
+1103339764 d:\codeblocks projects\mypad1.0\resource.h
+

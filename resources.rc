@@ -1,0 +1,47 @@
+#include"resource.h"
+
+//Icons
+IDI_TITLE ICON "titleico.ico"
+IDI_WIN ICON "mainico.ico"
+
+//Menu Bar
+IDC_MENU MENU
+BEGIN
+     POPUP "&File"
+     BEGIN
+          MENUITEM "New",IDM_FNEW
+          MENUITEM "Open",IDM_FOPEN
+          MENUITEM "Save",IDM_FSAVE
+          MENUITEM "Save As",IDM_FSAVEAS
+          MENUITEM SEPARATOR
+          MENUITEM "E&xit",IDM_FEXIT
+     END
+     POPUP "&Edit"
+     BEGIN
+          MENUITEM "Cut",IDM_ECUT
+          MENUITEM "Copy",IDM_ECOPY
+          MENUITEM "Paste",IDM_EPASTE
+     END
+     POPUP "F&ormat"
+     BEGIN
+          MENUITEM "Font",IDM_FOCHANGE
+     END
+     POPUP "&About"
+     BEGIN
+          MENUITEM "Programmer",IDM_APROG
+          MENUITEM "Mypad",IDM_AMPAD
+     END
+END
+
+//Accelarator table
+IDC_ACCEL ACCELERATORS
+BEGIN
+     IDK_A,IDM_FSAVEAS,VIRTKEY,CONTROL
+     IDK_F,IDM_FOCHANGE,VIRTKEY,CONTROL
+     IDK_N,IDM_FNEW,VIRTKEY,CONTROL
+     IDK_O,IDM_FOPEN,VIRTKEY,CONTROL
+     IDK_S,IDM_FSAVE,VIRTKEY,CONTROL
+     IDK_F1,IDM_AMPAD,VIRTKEY
+     IDK_F2,IDM_APROG,VIRTKEY
+END
+
